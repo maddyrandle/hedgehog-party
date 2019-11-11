@@ -35,23 +35,32 @@ main {
   background-color: #656794;
   color: #FEFEFF;
   font-size: 22px;
+  padding: 1% 0 0 1%;
+  width: 60%;
 }
 
 .form {
   background-color: #656794;
+  padding: 2%;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-form {
+  background-color: #656794;
   display: flex;
   flex-direction: column;
-  padding: 1%;
-  width: 60%;
 }
 
 input {
   background-color: #FEFEFF;
   border: none;
-  color: #3B4071;
   font-size: 14px;
-  margin: 1% 0;
-  padding: 1%;
+  margin: 5% 0;
+  padding: 5%;
+  width: 320%;
 }
 
 button {
@@ -59,10 +68,23 @@ button {
   border: none;
   color: #FEFEFF;
   font-size: 14px;
-  padding: 1%;
+  margin-top: 5%;
+  padding: 5%;
+  width: 320%;
 }
 
 button:hover {
   background-color: #362256;
   transition: .5s;
+}
+
+.image {
+  background-image: url('./images/hedgehog.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 185px;
+  margin-top: .99%;
+  margin-left: 2%;
+  width: 30%;
 }
