@@ -35,13 +35,13 @@ main {
   background-color: #656794;
   color: #FEFEFF;
   font-size: 22px;
-  padding: 1% 0 0 1%;
+  padding: 1.5% 0 0 1.5%;
   width: 60%;
 }
 
 .form {
   background-color: #656794;
-  padding: 2%;
+  padding: 1.5%;
   width: 60%;
   display: flex;
   flex-direction: row;
@@ -60,7 +60,7 @@ input {
   font-size: 14px;
   margin: 5% 0;
   padding: 5%;
-  width: 320%;
+  width: 325%;
 }
 
 button {
@@ -70,7 +70,7 @@ button {
   font-size: 14px;
   margin-top: 5%;
   padding: 5%;
-  width: 320%;
+  width: 325%;
 }
 
 button:hover {
@@ -85,6 +85,5 @@ button:hover {
   background-size: cover;
   height: 185px;
   margin-top: .99%;
-  margin-left: 2%;
   width: 30%;
 }
