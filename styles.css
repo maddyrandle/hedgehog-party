@@ -23,25 +23,41 @@ main {
   background-color: #FEFEFF;
   color: #000000;
   font-size: 22px;
+
 }
 
 .invite-list {
   background-color: #FEFEFF;
-  padding: 1%;
+  padding: 2%;
   width: 60%;
+}
+
+.list-titles,
+li {
+  border-bottom: 1px solid #000000;
+  background-color: #FEFEFF;
+  display: flex;
+  flex-direction: row;
+  font-weight: 600;
+  justify-content: space-between;
+  padding: 2% 0 .5% .5%;
+}
+
+li {
+  border: none;
 }
 
 .form-header {
   background-color: #656794;
   color: #FEFEFF;
   font-size: 22px;
-  padding: 1.5% 0 0 1.5%;
+  padding: 1.5% 0 0 2%;
   width: 60%;
 }
 
 .form {
   background-color: #656794;
-  padding: 1.5%;
+  padding: 1% 2% 2% 2%;
   width: 60%;
   display: flex;
   flex-direction: row;
@@ -83,7 +99,7 @@ button:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 185px;
-  margin-top: .99%;
+  height: 95%;
+  margin-top: 1%;
   width: 30%;
 }
