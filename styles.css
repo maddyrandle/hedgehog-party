@@ -1,9 +1,13 @@
 * {
-  background-color: #3B3B6C;
   box-sizing: border-box;
   font-family: 'Quicksand', sans-serif;
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #3B4071;
+  background: linear-gradient(45deg, #362256, #3B4071);
 }
 
 h1 {
@@ -39,12 +43,13 @@ li {
   display: flex;
   flex-direction: row;
   font-weight: 600;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 2% 0 .5% .5%;
 }
 
 li {
   border: none;
+  margin-right: 21%;
 }
 
 .form-header {
