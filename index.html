@@ -16,6 +16,11 @@
           <li># of Hoglets</li>
           <li>Allergies</li>
         </ul>
+        <ul class="rsvp-info hidden">
+          <li class="name-input hidden"></li>
+          <li class="hoglet-input hidden"></li>
+          <li class="allergies-input hidden"></li>
+        </ul>
       </section>
       <h3 class="form-header">Invite another Hedgehog</h3>
       <section class="form">
@@ -23,14 +28,12 @@
           <input type="text" id="name" placeholder="Name of Hedgehog">
           <input type="number" id="hoglets" placeholder="Number of Hoglets">
           <input type="text" id="allergies" placeholder="Allergies">
-          <button type="button">INVITE!</button>
+          <button type="button" class="invite-btn">INVITE!</button>
+          <p class="error-message"><p>
         </form>
         <div class="image"></div>
       </section>
     </main>
-
-
-
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

@@ -37,6 +37,7 @@ main {
 }
 
 .list-titles,
+.rsvp-info,
 li {
   border-bottom: 1px solid #000000;
   background-color: #FEFEFF;
@@ -47,7 +48,10 @@ li {
   padding: 2% 0 .5% .5%;
 }
 
-li {
+li,
+.name-input,
+.hoglet-input,
+.allergies-input {
   border: none;
   margin-right: 21%;
 }
@@ -99,6 +103,10 @@ button:hover {
   transition: .5s;
 }
 
+.error-message {
+
+}
+
 .image {
   background-image: url('./images/hedgehog.jpg');
   background-position: center;
@@ -107,4 +115,8 @@ button:hover {
   height: 95%;
   margin-top: 1%;
   width: 30%;
+}
+
+.hidden {
+  display: none;
 }
