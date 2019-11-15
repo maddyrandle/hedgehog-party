@@ -1,13 +1,13 @@
 var inviteBtn = document.querySelector(".invite-btn");
 var inviteListContainer = document.querySelector(".invite-list-container");
+var hogletName = document.querySelector(".name");
+var numberOfHoglets = document.querySelector(".hoglets");
+var allergies = document.querySelector(".allergies");
 
-inviteBtn.addEventListener("click", addRsvpInfo);
+inviteBtn.addEventListener("click", validateRsvpInfo);
 inviteListContainer.addEventListener("click", removeRsvpInfo);
 
 function addRsvpInfo() {
-  var hogletName = document.querySelector(".name");
-  var numberOfHoglets = document.querySelector(".hoglets");
-  var allergies = document.querySelector(".allergies");
   var form = document.querySelector(".rsvp-form");
   inviteListContainer.innerHTML += `
   <div class="rsvp-categories">
@@ -22,4 +22,13 @@ function addRsvpInfo() {
 
 function removeRsvpInfo(event) {
   event.target.closest(".rsvp-categories").remove();
+}
+
+function validateRsvpInfo() {
+  if (hogletName.value === "" || numberOfHoglets.value === "" || allergies.value === "") {
+    inviteBtn.disabled = true;
+  } else {
+    inviteBtn.disabled = false;
+    addRsvpInfo();
+  }
 }
