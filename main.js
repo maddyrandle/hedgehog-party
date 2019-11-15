@@ -3,9 +3,15 @@ var inviteListContainer = document.querySelector(".invite-list-container");
 var hogletName = document.querySelector(".name");
 var numberOfHoglets = document.querySelector(".hoglets");
 var allergies = document.querySelector(".allergies");
+var validateNameInput = document.querySelector(".validate-name");
+var validateNumberInput = document.querySelector(".validate-number");
+var validateAllergyInput = document.querySelector(".validate-allergies");
 
 inviteBtn.addEventListener("click", validateRsvpInfo);
 inviteListContainer.addEventListener("click", removeRsvpInfo);
+validateNameInput.addEventListener("keydown", validateRsvpInfo(event));
+validateNumberInput.addEventListener("keydown", validateRsvpInfo(event));
+validateAllergyInput.addEventListener("keydown", validateRsvpInfo(event));
 
 function addRsvpInfo() {
   var form = document.querySelector(".rsvp-form");
@@ -24,8 +30,8 @@ function removeRsvpInfo(event) {
   event.target.closest(".rsvp-categories").remove();
 }
 
-function validateRsvpInfo() {
-  if (hogletName.value === "" || numberOfHoglets.value === "" || allergies.value === "") {
+function validateRsvpInfo(event) {
+  if (hogletName.event.target.value === "" || numberOfHoglets.event.target.value === "" || allergies.event.target.value === "") {
     inviteBtn.disabled = true;
   } else {
     inviteBtn.disabled = false;
