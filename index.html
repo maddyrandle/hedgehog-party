@@ -7,29 +7,24 @@
     <title>Hedgehog Party</title>
   </head>
   <body>
-    <h1>Hedgehog Party</h1>
+    <h1 class="page-title">Hedgehog Party</h1>
     <main>
-      <section class="invite-list">
-        <h3 class="invite-header">Invitation List</h3>
-        <ul class="list-titles">
-          <li>Name</li>
-          <li># of Hoglets</li>
-          <li>Allergies</li>
-        </ul>
-        <ul class="rsvp-info hidden">
-          <li class="name-input hidden"></li>
-          <li class="hoglet-input hidden"></li>
-          <li class="allergies-input hidden"></li>
-        </ul>
+      <section class="invite-list-container">
+        <h3 class="invite-list-title">Invitation List</h3>
+        <div class="rsvp-categories">
+          <p>Name</p>
+          <p># of Hoglets</p>
+          <p>Allergies</p>
+        </div>
       </section>
-      <h3 class="form-header">Invite another Hedgehog</h3>
-      <section class="form">
-        <form class="input-form">
-          <input type="text" id="name" placeholder="Name of Hedgehog">
-          <input type="number" id="hoglets" placeholder="Number of Hoglets">
-          <input type="text" id="allergies" placeholder="Allergies">
+      <h3 class="invite-form-title">Invite another Hedgehog</h3>
+      <section class="rsvp-container">
+        <form class="rsvp-form">
+          <input type="text" class="name" class="new-class" placeholder="Name of Hedgehog">
+          <input type="number" class="hoglets" class="new-class" placeholder="Number of Hoglets">
+          <input type="text" class="allergies"
+          class="new-class" placeholder="Allergies">
           <button type="button" class="invite-btn">INVITE!</button>
-          <p class="error-message"><p>
         </form>
         <div class="image"></div>
       </section>

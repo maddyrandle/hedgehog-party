@@ -6,11 +6,12 @@
 }
 
 body {
-  background-color: #3B4071;
   background: linear-gradient(45deg, #362256, #3B4071);
+  background-color: #3B4071;
+  background-repeat: no-repeat;
 }
 
-h1 {
+.page-title {
   color: #D3D5E9;
   padding: 2%;
   text-align: center;
@@ -23,32 +24,30 @@ main {
   height: 100vh;
 }
 
-.invite-header {
-  background-color: #FEFEFF;
-  color: #000000;
-  font-size: 22px;
-
-}
-
-.invite-list {
+.invite-list-container {
   background-color: #FEFEFF;
   padding: 2%;
   width: 60%;
 }
 
-.list-titles,
+.invite-list-title {
+  background-color: #FEFEFF;
+  color: #000000;
+  font-size: 22px;
+}
+
+.rsvp-categories,
 .rsvp-info,
-li {
+p {
   border-bottom: 1px solid #000000;
   background-color: #FEFEFF;
   display: flex;
   flex-direction: row;
   font-weight: 600;
-  justify-content: flex-start;
   padding: 2% 0 .5% .5%;
 }
 
-li,
+p,
 .name-input,
 .hoglet-input,
 .allergies-input {
@@ -56,7 +55,7 @@ li,
   margin-right: 21%;
 }
 
-.form-header {
+.invite-form-title {
   background-color: #656794;
   color: #FEFEFF;
   font-size: 22px;
@@ -64,7 +63,7 @@ li,
   width: 60%;
 }
 
-.form {
+.rsvp-container {
   background-color: #656794;
   padding: 1% 2% 2% 2%;
   width: 60%;
@@ -73,7 +72,7 @@ li,
   justify-content: space-between;
 }
 
-.input-form {
+.rsvp-form {
   background-color: #656794;
   display: flex;
   flex-direction: column;
@@ -88,7 +87,7 @@ input {
   width: 325%;
 }
 
-button {
+.invite-btn {
   background-color: #3B4071;
   border: none;
   color: #FEFEFF;
@@ -98,13 +97,18 @@ button {
   width: 325%;
 }
 
-button:hover {
+.invite-btn:hover {
   background-color: #362256;
   transition: .5s;
 }
 
-.error-message {
-
+.uninvite-btn {
+  width: 10%;
+  outline: none;
+  border: none;
+  padding: 3px 5px;
+  background-color: #d2d5e8;
+  color: #362256;
 }
 
 .image {
@@ -115,8 +119,4 @@ button:hover {
   height: 95%;
   margin-top: 1%;
   width: 30%;
-}
-
-.hidden {
-  display: none;
 }
